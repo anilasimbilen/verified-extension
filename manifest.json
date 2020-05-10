@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Verified CV Plugin",
+  "description": "Extension designed for Verified.cv",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "default_icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "default_icon.png"
+  },
+  "permissions": ["contextMenus", "activeTab", "clipboardRead"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}

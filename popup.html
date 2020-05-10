@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Verified</title>
+    <script src="popup.js"></script>
+    <style>
+      body {
+        background-color: rgb(159, 211, 214);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      h1 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #cred_input {
+        background-color: transparent;
+        width: 40ch;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border-width: initial;
+        border-style: none;
+        border-color: initial;
+        border-image: initial;
+      }
+      #cred_input:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Verify Credential</h1>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          width: 90%;
+          background-color: rgb(186, 222, 224);
+          padding: 2.98507vh;
+          border-radius: 5.97015vh;
+        "
+      >
+        <input
+          id="cred_input"
+          placeholder="Enter a certificate or badge serial number"
+          value=""
+        />
+      </div>
+      <a
+        style="
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          background-color: rgb(0, 173, 181);
+          border-radius: 4.86111vw;
+          margin-top: 10px;
+          color: white;
+          font-weight: 300;
+          cursor: pointer;
+          font-size: 1rem;
+        "
+        id="verifyButton"
+        >Verify</a
+      >
+    </div>
+  </body>
+</html>
